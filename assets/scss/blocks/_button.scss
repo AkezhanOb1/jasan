@@ -1,0 +1,12 @@
+.button {
+  background-color: $main-color;
+  border-radius: 7px;
+  height: 48px;
+  @include text-style(1.6rem, 700, $white-color);
+
+  &--outline {
+    background-color: transparent;
+    border: 1px solid $main-color;
+    color: $main-color;
+  }
+}

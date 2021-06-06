@@ -13,6 +13,14 @@
 
 // blocks
 @import "blocks/container";
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/welcome-section";
+@import "blocks/button";
+@import "blocks/company-slider";
+@import "blocks/about-section";
+@import "blocks/tariff-section";
+@import "blocks/tariff-card";
 
 html, body {
   font-size: 62.5%;

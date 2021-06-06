@@ -1,2 +1,9 @@
 .heading-medium {
+  @include text-style(3.6rem, 700, $text-color);
+  line-height: 54px;
+}
+
+.title-small {
+  @include text-style(1.8rem, 600, $main-color);
+  line-height: 27px;
 }

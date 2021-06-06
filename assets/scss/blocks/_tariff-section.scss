@@ -1,0 +1,33 @@
+.tariff-section {
+
+  &__container {
+    @extend %container;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  &__subtitle {
+    @include text-style(1.6rem, 400, #8987BF);
+    line-height: 24px;
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 95px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__item {
+
+  }
+}

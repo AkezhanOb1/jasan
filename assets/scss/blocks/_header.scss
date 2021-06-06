@@ -1,0 +1,126 @@
+.header {
+  background-color: $white-color;
+  box-shadow: 0 4px 10px rgba(182, 198, 255, 0.15);
+
+  &__container {
+    @extend %container;
+
+    &--top {
+      height: 85px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &--bottom {
+      display: flex;
+      align-items: center;
+      height: 54px;
+    }
+  }
+
+  &__top {
+    border-bottom: 1px solid #E4ECF7;
+  }
+
+  &__logo {
+  }
+
+  &__grey-text {
+    @include text-style(1.4rem, 400, #7A7B7C);
+    line-height: 18px;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    height: 85px;
+  }
+
+  &__social {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    position: relative;
+
+    svg {
+      fill: #D2D9F5;
+      transition: all .2s;
+    }
+
+    &:hover {
+      svg {
+        fill: #416ADE;
+      }
+    }
+
+    &:before {
+      content: '';
+      width: 1px;
+      height: 85px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #E4ECF7;
+    }
+
+    &:last-child:after {
+      content: '';
+      width: 1px;
+      height: 85px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: #E4ECF7;
+    }
+  }
+
+  &__call-box {
+  }
+
+  &__phone-text {
+    @include text-style(2.4rem, 700, $text-color);
+    line-height: 29px;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  &__call-order {
+    @include text-style(1.4rem, 500, #3661D6);
+    line-height: 16.5px;
+    text-decoration: underline;
+  }
+
+  &__mail-box {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 14px;
+    }
+  }
+
+  &__mail-info {
+    h6 {
+      @include text-style(1.4rem, 700, $text-color);
+      line-height: 18px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      @include text-style(1.4rem, 500, $text-color);
+    }
+  }
+
+  &__item {
+    @include text-style(1.6rem, 600, #333333);
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 110px;
+    }
+  }
+}
