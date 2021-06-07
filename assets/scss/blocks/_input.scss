@@ -1,0 +1,14 @@
+.input {
+  width: 100%;
+  display: block;
+  background: #FFFFFF;
+  border: 1px solid #D8D9EA;
+  border-radius: 7px;
+  padding: 20px;
+  @include text-style(1.6rem, 400, #8987BF);
+
+  &--textarea {
+    height: 220px;
+    resize: none;
+  }
+}

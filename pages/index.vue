@@ -103,7 +103,7 @@
         <div class="about-section__achieves">
 
           <div class="about-section__item about-section__item--1">
-            <svg class="about-section__icon" width="81" height="80">
+            <svg class="about-section__icon" width="89" height="80">
               <use href="../assets/img/icons.svg#document"></use>
             </svg>
 
@@ -117,7 +117,7 @@
           </div>
 
           <div class="about-section__item about-section__item--2">
-            <svg class="about-section__icon" width="81" height="80">
+            <svg class="about-section__icon" width="89" height="80">
               <use href="../assets/img/icons.svg#document"></use>
             </svg>
 
@@ -131,7 +131,7 @@
           </div>
 
           <div class="about-section__item about-section__item--3">
-            <svg class="about-section__icon" width="81" height="80">
+            <svg class="about-section__icon" width="89" height="80">
               <use href="../assets/img/icons.svg#document"></use>
             </svg>
 
@@ -280,6 +280,155 @@
       </div>
 
     </section>
+
+    <section class="main__section bitrix-section">
+
+      <div class="bitrix-section__container">
+
+        <div class="bitrix-section__title title-small">
+          Bitrix24
+        </div>
+
+        <div class="bitrix-section__row">
+          <h2 class="bitrix-section__heading heading-medium">
+            Быстро, просто, эффективно
+          </h2>
+
+          <button class="bitrix-section__btn button">
+            Перейти на Битрикс
+          </button>
+        </div>
+
+        <div class="bitrix-section__list">
+
+          <div class="bitrix-section__item">
+            <div class="bitrix-section__name">
+              CRM
+            </div>
+
+            <div class="bitrix-section__text">
+              Помогает продавать больше:• берет под контроль все каналы коммуникаций с клиентами;• подсказывает
+              менеджеру, что делать;• автоматизирует продажи;• создаёт рассылки под разные сегменты;• сообщает
+              руководителю о проблеме;• устанавливает взаимодействие с 1С.
+            </div>
+          </div>
+
+          <div class="bitrix-section__item">
+            <div class="bitrix-section__name">
+              Задачи и проекты
+            </div>
+
+            <div class="bitrix-section__text">
+              Помогают работать вместе и успевать вовремя.Если задача поставлена в Битрикс24, она будет выполнена:• все
+              причастные наблюдают за её выполнением и вносят свои корректировки своевременно;• о задачах напоминают
+              счётчики;• она будет выведена вверх списка согласно приоритетам и срочности;
+            </div>
+          </div>
+
+          <div class="bitrix-section__item">
+            <div class="bitrix-section__name">
+              Онлайн оффис
+            </div>
+
+            <div class="bitrix-section__text">
+              Помогает работать вместе:• открытые и закрытые чаты;• общий диск;• календарь для встреч с учётом планов
+              участников;• создание групп по направлениям;• отчеты руководителю в определённое время;• бизнес-процессы и
+              другие инструменты для совместной работы
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="main__section steps-section">
+      <div class="steps-section__container">
+
+        <div class="steps-section__title title-small">
+          Шаги
+        </div>
+
+        <h2 class="steps-section__heading heading-medium">
+          Несколько шагов до успеха
+        </h2>
+
+        <div class="steps-section__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae lectus sit cras libero. Sit nunc potenti id
+          iaculis. Mi odio sit integer sit vel porttitor vestibulum sit donec.
+        </div>
+
+        <div class="steps-section__list">
+
+          <div class="steps-section__step" v-for="i in 6">
+
+            <div class="steps-section__info">
+              <div class="steps-section__name">
+                Шаг {{ i }}. Название шага
+              </div>
+
+              <div class="steps-section__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh eu facilisis dolor ipsum, nullam ornare.
+                Sed sit mi sed id at placerat lectus quis. Luctus diam ut non facilisi tellus a interdum.
+              </div>
+            </div>
+
+            <div class="steps-section__icon">
+              <svg width="89" height="81">
+                <use href="../assets/img/icons.svg#document"></use>
+              </svg>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="main__section contact-section">
+
+      <div class="contact-section__container">
+
+        <div class="contact-section__title title-small">
+          Контакты
+        </div>
+
+        <div class="contact-section__heading heading-medium">
+          Свзязаться с нами
+        </div>
+
+        <form class="contact-section__form">
+          <input type="text" class="contact-section__input input" placeholder="Имя">
+
+          <input type="email" class="contact-section__input input" placeholder="Адрес электронной почти">
+
+          <input type="tel" class="contact-section__input input" placeholder="Телефон">
+
+          <textarea class="contact-section__textarea input input--textarea"
+                    placeholder="Напишите свое сообщение сюда..."></textarea>
+
+          <label class="contact-section__policy-box">
+            <input type="checkbox" class="contact-section__checkbox">
+            <span class="contact-section__checkmark"></span>
+
+            <span class="contact-section__policy-text">
+                Я согласен(а) с <a href="#">политика конфиденциальности</a>
+              </span>
+          </label>
+
+          <button class="contact-section__btn button">
+            Отправить
+          </button>
+
+        </form>
+
+      </div>
+
+      <img src="../assets/img/contact-img.png" alt="" class="contact-section__img">
+    </section>
+
   </main>
 </template>
 

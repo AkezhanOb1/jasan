@@ -1,0 +1,114 @@
+.footer {
+  padding: 40px 0;
+  background-color: #F2FBFF;
+
+  &__container {
+    @extend %container;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__logo-box {
+    //margin-right: 180px;
+    width: 250px;
+  }
+
+  &__logo {
+    margin-bottom: 27px;
+  }
+
+  &__grey-text {
+    @include text-style(1.4rem, 400, #7A7B7C);
+    line-height: 21px;
+  }
+
+  &__link-box {
+    display: flex;
+    align-items: flex-start;
+    //margin-right: 90px;
+  }
+
+  &__links {
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+
+  &__link {
+    @include text-style(1.6rem, 600, #333333);
+    line-height: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__contacts {
+    //margin-right: 20px;
+  }
+
+  &__contact-box {
+    display: flex;
+    align-items: flex-start;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__icon {
+    margin-right: 5px;
+  }
+
+  &__contact-text {
+    @include text-style(1.4rem, 300, #2B3E50);
+    display: block;
+    //line-height: 21px;
+
+    &--mb10 {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__social-box {
+    text-align: right;
+  }
+
+  &__social-title {
+    @include text-style(1.4rem, 700, #3d3d3d);
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #F5F8FD;
+    box-shadow: 18px 18px 20px #D1D9E6, -18px -18px 20px #FFFFFF;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__privacy-text {
+    @include text-style(1.4rem, 300, #2F3A5E);
+    line-height: 19px;
+  }
+}
