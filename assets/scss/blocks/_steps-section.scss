@@ -1,0 +1,103 @@
+.steps-section {
+
+  $e: &;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  &__subtitle {
+    @include text-style(1.6rem, 400, #8987BF);
+    text-align: center;
+    line-height: 24px;
+    max-width: 750px;
+    margin: 0 auto 40px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
+    width: 838px;
+    margin: 0 auto;
+  }
+
+  &__step {
+    width: 516px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+
+
+
+    &:not(:last-child) {
+      margin-bottom: 113px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 53px;
+        height: 166px;
+        background-image: url("../assets/img/icons/step-arrow.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: -120px;
+        right: -50px;
+      }
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      margin-left: auto;
+
+      #{$e}__info {
+        text-align: left;
+      }
+
+      &:after {
+        right: unset;
+        left: -50px;
+        transform: rotateY(180deg);
+      }
+    }
+  }
+
+  &__info {
+    width: 307px;
+    text-align: right;
+    //margin-right: 15px;
+  }
+
+  &__name {
+    @include text-style(2.4rem, 600, $text-color);
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    @include text-style(1.6rem, 400, $text-color);
+    line-height: 24px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 194px;
+    height: 194px;
+    border: 2px dashed $main-color;
+    border-radius: 50%;
+  }
+}
