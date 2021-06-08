@@ -47,4 +47,45 @@
     @include text-style(1.6rem, 400, #3D3D3D);
     line-height: 24px;
   }
+
+  @include respond(tab-land) {
+    &__btn {
+      width: 200px;
+    }
+
+    &__list {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+    }
+  }
+
+  @include respond(phone) {
+    &__heading {
+      margin-bottom: 20px;
+    }
+
+    &__btn {
+      width: 260px;
+    }
+
+    &__row {
+      display: block;
+    }
+
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+    }
+
+    &__name {
+      @include text-style(2rem, 700, #2E6ADB);
+      line-height: 28px;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      @include text-style(1.4rem, 400, #3D3D3D);
+      line-height: 20px;
+    }
+  }
 }

@@ -109,4 +109,14 @@
     transform: translateY(-50%);
     width: 49.27%;
   }
+
+  @include respond(tab-land) {
+    &__form {
+      width: unset;
+    }
+
+    &__img {
+      display: none;
+    }
+  }
 }

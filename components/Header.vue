@@ -5,11 +5,15 @@
 
       <div class="header__container header__container--top">
 
-        <img src="../assets/img/logo.png" alt="" class="header__logo">
+        <div class="header__logo-box">
 
-        <div class="header__grey-text">
-          Самые эффективные CRM <br>
-          услуги в Казахстане
+          <img src="../assets/img/logo.png" alt="" class="header__logo">
+
+          <div class="header__grey-text">
+            Самые эффективные CRM <br>
+            услуги в Казахстане
+          </div>
+
         </div>
 
         <div class="header__socials">
@@ -52,6 +56,7 @@
 
         </div>
 
+        <img src="../assets/img/icons/burger.svg" alt="" class="header__burger" @click="sidebarOpen = true">
       </div>
 
     </div>
@@ -66,11 +71,69 @@
       </div>
     </div>
 
+    <div class="header__sidebar sidebar" :class="{'sidebar--active' : sidebarOpen}">
+
+      <img src="../assets/img/icons/close.png" alt="" class="sidebar__close" @click="sidebarOpen = false">
+
+      <div class="sidebar__links">
+        <div class="sidebar__link">Главная</div>
+        <div class="sidebar__link">Услуги</div>
+        <div class="sidebar__link">Битрикс24</div>
+        <div class="sidebar__link">Контакты</div>
+      </div>
+
+      <div class="sidebar__socials">
+        <a href="#" class="sidebar__social">
+          <svg width="20" height="20">
+            <use href="../assets/img/icons.svg#footer-inst"></use>
+          </svg>
+        </a>
+
+        <a href="#" class="sidebar__social">
+          <svg width="20" height="20">
+            <use href="../assets/img/icons.svg#footer-fb"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="sidebar__call-box">
+        <a href="tel: +7 (777) 205 93 39" class="sidebar__phone-text">
+          +7 (777) 2059339
+        </a>
+        <a href="" class="sidebar__call-order">
+          Заказать обратный звонок
+        </a>
+      </div>
+
+      <div class="sidebar__mail-box">
+
+        <svg width="56" height="56">
+          <use href="../assets/img/icons.svg#mail-box"></use>
+        </svg>
+
+        <div class="sidebar__mail-info">
+          <h6>
+            Напишите нам
+          </h6>
+          <p>
+            info@jasan.kz
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
   </header>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      sidebarOpen: false
+    };
+  },
   methods: {}
 };
 </script>

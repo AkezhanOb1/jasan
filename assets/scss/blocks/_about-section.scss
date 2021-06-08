@@ -74,4 +74,91 @@
     @include text-style(2rem, 500, #8987BF);
     //line-height: 36px;
   }
+
+  @include respond(tab-land) {
+    &__container {
+      @extend %container;
+      display: block;
+    }
+
+    &__info {
+      width: unset;
+      margin-bottom: 50px;
+    }
+
+    &__achieves {
+      display: flex;
+      align-items: center;
+    }
+
+    &__item {
+      width: 250px;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      position: unset;
+
+      &--3 {
+        box-shadow: 4px 4px 30px rgba(213, 222, 245, 0.58);
+        border: 2px dashed $main-color;
+      }
+    }
+
+    &__icon {
+      margin-bottom: 0;
+      transform: scale(.8);
+    }
+
+    &__item-title {
+      @include text-style(3.2rem, 700, $main-color);
+      line-height: unset;
+      margin-bottom: 3px;
+    }
+
+    &__item-subtitle {
+      @include text-style(1.6rem, 500, #8987BF);
+      //line-height: 36px;
+    }
+  }
+
+  @include respond(phone) {
+    padding: 100px 0;
+
+    &__text {
+      @include text-style(1.4rem, 400, $text-color);
+      line-height: 20px;
+    }
+
+    &__info {
+      margin-bottom: 30px;
+    }
+
+    &__achieves {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: start;
+    }
+
+    &__icon {
+      display: none;
+    }
+
+    &__item-title {
+      margin-bottom: 10px;
+    }
+
+    &__item {
+      width: unset;
+      height: unset;
+      text-align: center;
+
+      &--3 {
+        box-shadow: unset;
+        border: unset;
+      }
+    }
+  }
 }

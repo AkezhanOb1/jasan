@@ -100,4 +100,94 @@
     border: 2px dashed $main-color;
     border-radius: 50%;
   }
+
+  @include respond(tab-land) {
+    &__list {
+      width: 768px;
+    }
+
+    &__step {
+      width: 470px;
+    }
+
+    &__info {
+      width: 240px;
+      text-align: right;
+      //margin-right: 15px;
+    }
+  }
+
+  @include respond(phone) {
+    &__subtitle {
+      @include text-style(1.4rem, 400, #8987BF);
+      line-height: 20px;
+      max-width: unset;
+    }
+
+    &__list {
+      display: grid;
+      flex-direction: unset;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+      //align-items: center;
+      width: unset;
+      margin: 0 auto;
+    }
+
+    &__step {
+      width: unset;
+      display: block;
+      align-items: unset;
+      justify-content: unset;
+      position: relative;
+      text-align: center;
+
+      border: 2px dashed #466BC8;
+      border-radius: 10px;
+
+      padding: 20px;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+
+        &:after {
+          display: none;
+        }
+      }
+
+      &:nth-child(even) {
+        flex-direction: unset;
+        margin-left: unset;
+
+        #{$e}__info {
+          text-align: unset;
+        }
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    &__info {
+      width: unset;
+      text-align: unset;
+      //margin-right: 15px;
+    }
+
+    &__name {
+      @include text-style(2rem, 600, $text-color);
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      @include text-style(1.4rem, 400, $text-color);
+      line-height: 20px;
+    }
+
+    &__icon {
+      display: none;
+    }
+  }
 }

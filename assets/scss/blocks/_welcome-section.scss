@@ -34,9 +34,32 @@
     width: 216px;
   }
 
-  &__person {
-    position: absolute;
-    top: 145px;
-    right: 10%;
+  @include respond(tab-land) {
+    height: 70vh;
+  }
+
+  @include respond(phone) {
+    background-size: cover;
+    background-position: left;
+
+    &__heading {
+      @include text-style(3.8rem, 700, $text-color);
+      line-height: 56px;
+      margin-bottom: 15px;
+
+      span {
+        color: $main-color;
+      }
+    }
+
+    &__subtitle {
+      @include text-style(1.8rem, 400, $text-color);
+      line-height: 27px;
+      margin-bottom: 40px;
+    }
+
+    &__btn {
+      width: 100%;
+    }
   }
 }

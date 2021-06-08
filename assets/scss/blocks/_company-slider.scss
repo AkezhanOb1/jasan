@@ -21,6 +21,12 @@
     align-items: center;
   }
 
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__img {
     filter: grayscale(100%);
     transition: all .5s;
@@ -52,5 +58,25 @@
 
   &__prev {
     right: 75px;
+  }
+
+  @include respond(tab-land) {
+    &__img {
+      filter: unset;
+    }
+  }
+
+  @include respond(phone) {
+    &__next,
+    &__prev {
+      width: 40px;
+      height: 40px;
+      top: unset;
+      bottom: -60px;
+    }
+
+    &__prev {
+      right: 60px;
+    }
   }
 }

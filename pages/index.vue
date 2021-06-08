@@ -466,10 +466,10 @@ export default {
       loop: true,
       breakpoints: {
         768: {
-          slidesPerView: 1,
+          slidesPerView: 3,
           spaceBetween: 20,
         },
-        1200: {
+        1140: {
           slidesPerView: 5,
           spaceBetween: 40,
         }

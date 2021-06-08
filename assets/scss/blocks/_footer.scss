@@ -112,4 +112,22 @@
     @include text-style(1.4rem, 300, #2F3A5E);
     line-height: 19px;
   }
+
+  @include respond(tab-land) {
+    &__container {
+      & > * {
+        &:not(:last-child) {
+          margin-bottom: 50px;
+        }
+      }
+    }
+
+    &__social-box {
+      text-align: left;
+    }
+
+    &__socials {
+      justify-content: flex-start;
+    }
+  }
 }

@@ -1,6 +1,12 @@
 .header {
   background-color: $white-color;
   box-shadow: 0 4px 10px rgba(182, 198, 255, 0.15);
+  //position: fixed;
+  //top: 0;
+  //left: 0;
+  //right: 0;
+  //width: 100%;
+  //z-index: 1000;
 
   &__container {
     @extend %container;
@@ -24,6 +30,12 @@
   }
 
   &__logo {
+    margin-right: 30px;
+  }
+
+  &__logo-box {
+    display: flex;
+    align-items: center;
   }
 
   &__grey-text {
@@ -121,6 +133,46 @@
 
     &:not(:last-child) {
       margin-right: 110px;
+    }
+  }
+
+  &__burger {
+    width: 32px;
+    height: 32px;
+    display: none;
+  }
+
+  @include respond(tab-land) {
+    //padding: 0 40px;
+
+    &__burger {
+      display: block;
+    }
+
+    &__bottom {
+      display: none;
+    }
+
+    &__socials {
+      display: none;
+    }
+
+    &__call-box {
+      display: none;
+    }
+
+    &__mail-box {
+      display: none;
+    }
+  }
+
+  @include respond(phone) {
+    &__logo {
+      margin-right: 30px;
+    }
+
+    &__grey-text {
+      display: none;
     }
   }
 }
