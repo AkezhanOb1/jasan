@@ -4,9 +4,16 @@
   height: 48px;
   @include text-style(1.6rem, 700, $white-color);
 
+  transition: all .3s;
+
   &--outline {
     background-color: transparent;
     border: 1px solid $main-color;
     color: $main-color;
+
+    &:hover {
+      background-color: $main-color;
+      color: $white-color;
+    }
   }
 }

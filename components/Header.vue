@@ -34,7 +34,7 @@
           <a href="tel: +7 (777) 205 93 39" class="header__phone-text">
             +7 (777) 2059339
           </a>
-          <a href="" class="header__call-order">
+          <a href="" class="header__call-order" v-scroll-to="{el: '#contact', duration: 700, offset: -160}">
             Заказать обратный звонок
           </a>
         </div>
@@ -63,11 +63,11 @@
 
     <div class="header__bottom">
       <div class="header__container header__container--bottom">
-        <div class="header__item">Главная</div>
-        <div class="header__item">Услуги</div>
-        <div class="header__item">Битрикс24</div>
-        <div class="header__item">Заявка</div>
-        <div class="header__item">Контакты</div>
+        <div class="header__item" v-scroll-to="{el: '#welcome', duration: 700, offset: -140}">Главная</div>
+        <div class="header__item" v-scroll-to="{el: '#services', duration: 700, offset: -160}">Услуги</div>
+        <div class="header__item" v-scroll-to="{el: '#bitrix', duration: 700, offset: -160}">Битрикс24</div>
+        <div class="header__item" v-scroll-to="{el: '#steps', duration: 700, offset: -160}">Заявка</div>
+        <div class="header__item" v-scroll-to="{el: '#contact', duration: 700, offset: -160}">Контакты</div>
       </div>
     </div>
 
@@ -76,10 +76,21 @@
       <img src="../assets/img/icons/close.png" alt="" class="sidebar__close" @click="sidebarOpen = false">
 
       <div class="sidebar__links">
-        <div class="sidebar__link">Главная</div>
-        <div class="sidebar__link">Услуги</div>
-        <div class="sidebar__link">Битрикс24</div>
-        <div class="sidebar__link">Контакты</div>
+        <div class="sidebar__link"
+             v-scroll-to="{el: '#welcome', duration: 700, offset: -100}"
+             @click="sidebarOpen = false">Главная</div>
+        <div class="sidebar__link"
+             v-scroll-to="{el: '#services', duration: 700, offset: -100}"
+             @click="sidebarOpen = false">Услуги</div>
+        <div class="sidebar__link"
+             v-scroll-to="{el: '#bitrix', duration: 700, offset: -100}"
+             @click="sidebarOpen = false">Битрикс24</div>
+        <div class="sidebar__link"
+             v-scroll-to="{el: '#steps', duration: 700, offset: -100}"
+             @click="sidebarOpen = false">Заявка</div>
+        <div class="sidebar__link"
+             v-scroll-to="{el: '#contact', duration: 700, offset: -100}"
+             @click="sidebarOpen = false">Контакты</div>
       </div>
 
       <div class="sidebar__socials">
@@ -100,7 +111,9 @@
         <a href="tel: +7 (777) 205 93 39" class="sidebar__phone-text">
           +7 (777) 2059339
         </a>
-        <a href="" class="sidebar__call-order">
+        <a href="" class="sidebar__call-order"
+           v-scroll-to="{el: '#contact', duration: 700, offset: -100}"
+           @click="sidebarOpen = false">
           Заказать обратный звонок
         </a>
       </div>

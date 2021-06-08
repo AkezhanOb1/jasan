@@ -43,6 +43,11 @@
     }
   }
 
+  &__error {
+    @include text-style(1.6rem, 400, #e82b2b);
+    margin: 30px 0;
+  }
+
   &__checkbox {
     position: absolute;
     opacity: 0;

@@ -15,14 +15,14 @@
       <div class="footer__link-box">
 
         <div class="footer__links">
-          <div class="footer__link">Главная</div>
-          <div class="footer__link">Услуги</div>
-          <div class="footer__link">Битрикс24</div>
+          <div class="footer__link" v-scroll-to="{el: '#welcome', duration: 700, offset: -140}">Главная</div>
+          <div class="footer__link" v-scroll-to="{el: '#services', duration: 700, offset: -160}">Услуги</div>
+          <div class="footer__link" v-scroll-to="{el: '#bitrix', duration: 700, offset: -160}">Битрикс24</div>
         </div>
 
         <div class="footer__links">
-          <div class="footer__link">Заявка</div>
-          <div class="footer__link">Контакты</div>
+          <div class="footer__link" v-scroll-to="{el: '#steps', duration: 700, offset: -160}">Заявка</div>
+          <div class="footer__link" v-scroll-to="{el: '#contact', duration: 700, offset: -160}">Контакты</div>
         </div>
 
       </div>

@@ -52,6 +52,10 @@ export default {
     mode: 'out-in'
   },
 
+  env: {
+    API_URL: 'https://jasan.kz:4322/'
+  },
+
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 

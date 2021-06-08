@@ -1,11 +1,16 @@
 .main {
   overflow-x: hidden;
   padding-bottom: 120px;
-  //padding-top: 140px;
+  padding-top: 140px;
+
   &__section {
     &:not(:last-child) {
       margin-bottom: 70px;
     }
+  }
+
+  @include respond(tab-land) {
+    padding-top: 86px;
   }
 
   @include respond(phone) {

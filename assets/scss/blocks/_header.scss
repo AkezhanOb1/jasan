@@ -1,12 +1,12 @@
 .header {
   background-color: $white-color;
   box-shadow: 0 4px 10px rgba(182, 198, 255, 0.15);
-  //position: fixed;
-  //top: 0;
-  //left: 0;
-  //right: 0;
-  //width: 100%;
-  //z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
 
   &__container {
     @extend %container;
@@ -130,9 +130,31 @@
     @include text-style(1.6rem, 600, #333333);
     text-transform: uppercase;
     cursor: pointer;
+    position: relative;
+    z-index: 10;
+
+
 
     &:not(:last-child) {
       margin-right: 110px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      width: 0;
+      height: 50%;
+      left: 0;
+      bottom: 0;
+      background-color: rgba($main-color, .3);
+      transition: all .3s;
+    }
+
+    &:hover {
+      &:before {
+        width: 100%;
+      }
     }
   }
 

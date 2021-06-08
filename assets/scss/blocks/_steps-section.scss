@@ -33,7 +33,7 @@
   }
 
   &__step {
-    width: 516px;
+    width: 512px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -95,8 +95,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 194px;
-    height: 194px;
+    width: 184px;
+    height: 184px;
     border: 2px dashed $main-color;
     border-radius: 50%;
   }

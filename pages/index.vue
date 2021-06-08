@@ -1,7 +1,7 @@
 <template>
   <main class="main">
 
-    <section class="main__section welcome-section" :style="{ 'background-image': randomBg}">
+    <section class="main__section welcome-section" :style="{ 'background-image': randomBg}" id="welcome">
       <div class="welcome-section__container">
         <h1 class="welcome-section__heading">
           <span>Автоматизируй</span> <br>
@@ -150,7 +150,7 @@
 
     </section>
 
-    <section class="main__section tariff-section">
+    <section class="main__section tariff-section" id="services">
 
       <div class="tariff-section__container">
 
@@ -281,7 +281,7 @@
 
     </section>
 
-    <section class="main__section bitrix-section">
+    <section class="main__section bitrix-section" id="bitrix">
 
       <div class="bitrix-section__container">
 
@@ -342,7 +342,7 @@
       </div>
     </section>
 
-    <section class="main__section steps-section">
+    <section class="main__section steps-section" id="steps">
       <div class="steps-section__container">
 
         <div class="steps-section__title title-small">
@@ -387,7 +387,7 @@
       </div>
     </section>
 
-    <section class="main__section contact-section">
+    <section class="main__section contact-section" id="contact">
 
       <div class="contact-section__container">
 
@@ -400,17 +400,32 @@
         </div>
 
         <form class="contact-section__form">
-          <input type="text" class="contact-section__input input" placeholder="Имя">
+          <input type="text"
+                 class="contact-section__input input"
+                 placeholder="Имя"
+                 v-model="name"
+                 :class="{'input--error' : nameStatus}">
 
-          <input type="email" class="contact-section__input input" placeholder="Адрес электронной почти">
+          <input type="email"
+                 class="contact-section__input input"
+                 placeholder="Адрес электронной почти"
+                 v-model="email"
+                 :class="{'input--error' : emailStatus}">
 
-          <input type="tel" class="contact-section__input input" placeholder="Телефон">
+          <input type="tel"
+                 class="contact-section__input input"
+                 placeholder="Телефон"
+                 v-model="phoneNumber"
+                 id="phoneNumber"
+                 :class="{'input--error' : phoneStatus}">
 
           <textarea class="contact-section__textarea input input--textarea"
-                    placeholder="Напишите свое сообщение сюда..."></textarea>
+                    placeholder="Напишите свое сообщение сюда..."
+                    v-model="message"
+                    :class="{'input--error' : messageStatus}"></textarea>
 
           <label class="contact-section__policy-box">
-            <input type="checkbox" class="contact-section__checkbox">
+            <input type="checkbox" class="contact-section__checkbox" v-model="policy">
             <span class="contact-section__checkmark"></span>
 
             <span class="contact-section__policy-text">
@@ -418,7 +433,11 @@
               </span>
           </label>
 
-          <button class="contact-section__btn button">
+          <div class="contact-section__error">
+            {{ errorMessage }}
+          </div>
+
+          <button class="contact-section__btn button" @click.prevent="sendForm">
             Отправить
           </button>
 
@@ -429,12 +448,32 @@
       <img src="../assets/img/contact-img.png" alt="" class="contact-section__img">
     </section>
 
+    <div class="modal" v-if="modalStatus">
+
+      <div class="modal__wrapper">
+
+        <img src="../assets/img/icons/modal-check-2.png" alt="" class="modal__checkmark">
+
+        <div class="modal__text">
+          Ваша заявка успешно отправлена. <br>
+          С вами свяжутся в ближайшее время
+        </div>
+
+        <button class="modal__btn button" @click="modalStatus = false">
+          Круто!
+        </button>
+
+      </div>
+
+    </div>
+
   </main>
 </template>
 
 <script>
 import allBackgroundImages from '../assets/bg-set/onLoadBg'
 import Swiper, {Pagination, Autoplay, Navigation} from 'swiper';
+import IMask from 'imask'
 
 Swiper.use([Pagination, Autoplay, Navigation]);
 
@@ -442,7 +481,18 @@ export default {
   data() {
     return {
       allBackgroundImages,
-      companySwiper: null
+      companySwiper: null,
+      name: '',
+      email: '',
+      phoneNumber: '',
+      message: '',
+      policy: false,
+      errorMessage: '',
+      nameStatus: false,
+      phoneStatus: false,
+      emailStatus: false,
+      messageStatus: false,
+      modalStatus: false
     }
   },
   computed: {
@@ -458,8 +508,68 @@ export default {
     prevSlideCompany() {
       this.companySwiper.slidePrev()
     },
+    sendForm() {
+      if (this.policy === false) {
+        this.errorMessage = 'Пожалуйста, ознакомьтесь с политикой конфиденциальности'
+      }
+
+      if (this.name === '') {
+        this.errorMessage = 'Пожалуйста, заполните все поля'
+        this.nameStatus = true
+      } else {
+        this.nameStatus = false
+      }
+
+      if (this.email === '') {
+        this.errorMessage = 'Пожалуйста, заполните все поля'
+        this.emailStatus = true
+      } else {
+        this.emailStatus = false
+      }
+
+      if (this.phoneNumber === '') {
+        this.errorMessage = 'Пожалуйста, заполните все поля'
+        this.phoneStatus = true
+      } else {
+        this.phoneStatus = false
+      }
+
+      if (this.message === '') {
+        this.errorMessage = 'Пожалуйста, заполните все поля'
+        this.messageStatus = true
+      } else {
+        this.messageStatus = false
+      }
+
+      if (this.policy && this.name !== '' && this.email !== '' && this.phoneNumber !== '' && this.message !== '') {
+        this.errorMessage = ''
+
+        this.$axios.post(process.env.API_URL + 'email', {
+          name: this.name,
+          phoneNumber: this.phoneNumber,
+          comment: this.message,
+          email: this.email
+        })
+          .then(response => {
+            console.log(response)
+            this.name = ''
+            this.phoneNumber = ''
+            this.message = ''
+            this.email = ''
+            this.modalStatus = true
+          })
+          .catch(e => console.log(e))
+      }
+    }
   },
   mounted() {
+    var inputMask = document.getElementById('phoneNumber');
+    var maskOptions = {
+      mask: '+{7}(000)000-00-00'
+    };
+    var mask = IMask(inputMask, maskOptions);
+    mask.updateValue();
+
     this.companySwiper = new Swiper('.company-slider__swiper-container', {
       slidesPerView: 1,
       spaceBetween: 8,
