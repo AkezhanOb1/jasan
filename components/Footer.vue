@@ -65,10 +65,10 @@
             <use href="../assets/img/icons.svg#map-pin"></use>
           </svg>
 
-          <a class="footer__contact-text" @click="linker(`https://go.2gis.com/7hc23`)">
+          <div class="footer__contact-text" @click="linker(`https://go.2gis.com/7hc23`)">
             Алматы, Алмалинский район, <br>
             Айтеке би 187, офис 216
-          </a>
+          </div>
 
         </div>
 
