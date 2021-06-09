@@ -65,10 +65,10 @@
             <use href="../assets/img/icons.svg#map-pin"></use>
           </svg>
 
-          <div class="footer__contact-text">
+          <a class="footer__contact-text" @click="linker(`https://go.2gis.com/7hc23`)">
             Алматы, Алмалинский район, <br>
             Айтеке би 187, офис 216
-          </div>
+          </a>
 
         </div>
 
@@ -80,12 +80,12 @@
         </div>
 
         <div class="footer__socials">
-          <a href="#" class="footer__social">
+          <a class="footer__social">
             <svg width="20" height="20" @click="linker(`https://www.facebook.com/jasankz/`)">
               <use href="../assets/img/icons.svg#footer-fb"></use>
             </svg>
           </a>
-          <a href="#" class="footer__social">
+          <a class="footer__social">
             <svg width="20" height="20" @click="linker(`https://www.instagram.com/jasan_technologies/`)">
               <use href="../assets/img/icons.svg#footer-inst"></use>
             </svg>

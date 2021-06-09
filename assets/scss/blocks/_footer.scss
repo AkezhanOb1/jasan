@@ -76,6 +76,7 @@
   &__contact-text {
     @include text-style(1.4rem, 300, #2B3E50);
     display: block;
+    cursor: pointer;
     //line-height: 21px;
 
     &--mb10 {
@@ -105,6 +106,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     width: 55px;
     height: 55px;
     border-radius: 50%;

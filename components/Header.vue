@@ -17,13 +17,13 @@
         </div>
 
         <div class="header__socials">
-          <a href="" class="header__social">
+          <a class="header__social">
             <svg width="25" height="25" @click="linker(`https://www.instagram.com/jasan_technologies/`)">
               <use href="../assets/img/icons.svg#header-inst"></use>
             </svg>
           </a>
 
-          <a href="" class="header__social">
+          <a  class="header__social">
             <svg width="25" height="25" @click="linker(`https://www.facebook.com/jasankz/`)">
               <use href="../assets/img/icons.svg#header-fb"></use>
             </svg>
@@ -34,7 +34,7 @@
           <a href="tel: +7 (777) 205 93 39" class="header__phone-text">
             +7 (777) 2059339
           </a>
-          <a href="" class="header__call-order" v-scroll-to="{el: '#contact', duration: 700, offset: -160}">
+          <a class="header__call-order" v-scroll-to="{el: '#contact', duration: 700, offset: -160}">
             Заказать обратный звонок
           </a>
         </div>
