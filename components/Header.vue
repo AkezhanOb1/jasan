@@ -7,7 +7,7 @@
 
         <div class="header__logo-box">
 
-          <img src="../assets/img/logo.png" alt="" class="header__logo">
+          <img src="../assets/img/logo-jasan.png" alt="" class="header__logo">
 
           <div class="header__grey-text">
             Самые эффективные CRM <br>

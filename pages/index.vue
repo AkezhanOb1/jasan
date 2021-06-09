@@ -13,7 +13,7 @@
           когда он только узнал о товаре и до покупки.
         </p>
 
-        <button class="welcome-section__btn button">
+        <button class="welcome-section__btn button" v-scroll-to="{el: '#contact', duration: 700, offset: -160}">
           Подробнее
         </button>
       </div>
@@ -177,6 +177,7 @@
                 <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
               </ul>
             </div>
 
@@ -186,7 +187,7 @@
               </div>
 
 
-              <button class="tariff-card__btn button button--outline">
+              <button class="tariff-card__btn button button--outline" v-scroll-to="{el: '#contact', duration: 700, offset: -160}" @click="preText(`Начальный`)">
                 Заказать
               </button>
             </div>
@@ -198,11 +199,13 @@
                 <use href="../assets/img/icons.svg#target"></use>
               </svg>
 
-              <div class="tariff-card__name">
+              <div class="tariff-card__name" v-scroll-to="{el: '#contact', duration: 700, offset: -160}">
                 Стандартный
               </div>
 
               <ul class="tariff-card__list">
+                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -214,7 +217,7 @@
                 от <span>90 000 тг.</span>
               </div>
 
-              <button class="tariff-card__btn button button--outline">
+              <button class="tariff-card__btn button button--outline" v-scroll-to="{el: '#contact', duration: 700, offset: -160}" @click="preText(`Стандартный`)">
                 Заказать
               </button>
             </div>
@@ -234,6 +237,9 @@
                 <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
               </ul>
             </div>
 
@@ -242,7 +248,7 @@
                 от <span>120 000 тг.</span>
               </div>
 
-              <button class="tariff-card__btn button button--outline">
+              <button class="tariff-card__btn button button--outline" v-scroll-to="{el: '#contact', duration: 700, offset: -160}" @click="preText(`Улучшенный`)">
                 Заказать
               </button>
             </div>
@@ -262,6 +268,10 @@
                 <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
               </ul>
             </div>
 
@@ -270,7 +280,7 @@
                 от <span>160 000 тг.</span>
               </div>
 
-              <button class="tariff-card__btn button button--outline">
+              <button class="tariff-card__btn button button--outline" v-scroll-to="{el: '#contact', duration: 700, offset: -160}" @click="preText(`Продвинутый`)">
                 Заказать
               </button>
             </div>
@@ -508,6 +518,9 @@ export default {
     prevSlideCompany() {
       this.companySwiper.slidePrev()
     },
+    preText(text) {
+      this.message = `Добрый день! Хотели бы поподробнее узнать о тарифе "` +  text + `", не могли бы нас проконсультировать.`
+    },
     sendForm() {
       if (this.policy === false) {
         this.errorMessage = 'Пожалуйста, ознакомьтесь с политикой конфиденциальности'
@@ -541,15 +554,22 @@ export default {
         this.messageStatus = false
       }
 
+      const params = new URLSearchParams()
+      params.append('name', this.name)
+      params.append('phoneNumber', this.phoneNumber)
+      params.append('comment', this.message)
+      params.append('email', this.email)
+
+      const config = {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        }
+      }
+
       if (this.policy && this.name !== '' && this.email !== '' && this.phoneNumber !== '' && this.message !== '') {
         this.errorMessage = ''
 
-        this.$axios.post(process.env.API_URL + 'email', {
-          name: this.name,
-          phoneNumber: this.phoneNumber,
-          comment: this.message,
-          email: this.email
-        })
+        this.$axios.post(process.env.API_URL + 'email', params, config)
           .then(response => {
             console.log(response)
             this.name = ''

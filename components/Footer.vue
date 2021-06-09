@@ -3,7 +3,7 @@
     <div class="footer__container">
 
       <div class="footer__logo-box">
-        <img src="../assets/img/logo.png" alt="" class="footer__logo">
+        <img src="../assets/img/logo-jasan.png" alt="" class="footer__logo">
 
         <div class="footer__grey-text">
           Самые эффективные CRM <br>
