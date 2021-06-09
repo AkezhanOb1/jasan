@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="footer__container">
 
-      <div class="footer__logo-box">
+      <div class="footer__logo-box" v-scroll-to="{el: '#welcome', duration: 700, offset: -140}">
         <img src="../assets/img/logo-jasan.png" alt="" class="footer__logo">
 
         <div class="footer__grey-text">
@@ -81,12 +81,12 @@
 
         <div class="footer__socials">
           <a href="#" class="footer__social">
-            <svg width="20" height="20">
+            <svg width="20" height="20" @click="linker(`https://www.facebook.com/jasankz/`)">
               <use href="../assets/img/icons.svg#footer-fb"></use>
             </svg>
           </a>
           <a href="#" class="footer__social">
-            <svg width="20" height="20">
+            <svg width="20" height="20" @click="linker(`https://www.instagram.com/jasan_technologies/`)">
               <use href="../assets/img/icons.svg#footer-inst"></use>
             </svg>
           </a>
@@ -102,5 +102,12 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    linker(link) {
+      window.open(link, '_blank')
+      //window.location = "https://www.bitrix24.kz/create.php?p=13670906"
+    },
+  }
+};
 </script>

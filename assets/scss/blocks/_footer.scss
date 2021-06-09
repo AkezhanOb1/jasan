@@ -17,7 +17,7 @@
 
   &__logo {
     margin-bottom: 27px;
-    height: 50px;
+    height: 40px;
     width: 140px;
   }
 
@@ -46,6 +46,13 @@
 
     &:not(:last-child) {
       margin-bottom: 25px;
+    }
+    &:hover {
+      color: #3661D6;
+      &:before {
+        color: #3661D6;
+        //width: 100%;
+      }
     }
   }
 

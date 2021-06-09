@@ -5,7 +5,7 @@
 
       <div class="header__container header__container--top">
 
-        <div class="header__logo-box">
+        <div class="header__logo-box" v-scroll-to="{el: '#welcome', duration: 700, offset: -140}">
 
           <img src="../assets/img/logo-jasan.png" alt="" class="header__logo">
 
@@ -18,13 +18,13 @@
 
         <div class="header__socials">
           <a href="" class="header__social">
-            <svg width="25" height="25">
+            <svg width="25" height="25" @click="linker(`https://www.instagram.com/jasan_technologies/`)">
               <use href="../assets/img/icons.svg#header-inst"></use>
             </svg>
           </a>
 
           <a href="" class="header__social">
-            <svg width="25" height="25">
+            <svg width="25" height="25" @click="linker(`https://www.facebook.com/jasankz/`)">
               <use href="../assets/img/icons.svg#header-fb"></use>
             </svg>
           </a>
@@ -147,7 +147,12 @@ export default {
       sidebarOpen: false
     };
   },
-  methods: {}
+  methods: {
+    linker(link) {
+      window.open(link, '_blank')
+      //window.location = "https://www.bitrix24.kz/create.php?p=13670906"
+    },
+  }
 };
 </script>
 

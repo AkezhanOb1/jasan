@@ -13,7 +13,7 @@
           когда он только узнал о товаре и до покупки.
         </p>
 
-        <button class="welcome-section__btn button" v-scroll-to="{el: '#contact', duration: 700, offset: -160}">
+        <button class="welcome-section__btn button" v-scroll-to="{el: '#services', duration: 700, offset: -160}">
           Подробнее
         </button>
       </div>
@@ -34,34 +34,29 @@
           <div class="swiper-container company-slider__swiper-container">
 
             <div class="swiper-wrapper company-slider__inner-wrapper">
-              <div class="swiper-slide company-slider__item">
-                <img src="../assets/img/company-1.png" alt="" class="company-slider__img">
+              <div class="swiper-slide company-slider__item" @click="linker(`https://www.bloomzed.kz`)" >
+                <img src="../assets/img/bloomzed.png" alt="" class="company-slider__img">
+              </div>
+
+              <div class="swiper-slide company-slider__item" @click="linker(`https://100potolkov.kz/`)">
+                <img src="../assets/img/100-potolkov.png" alt="" class="company-slider__img">
+              </div>
+
+              <div class="swiper-slide company-slider__item" @click="linker(`https://100za5.kz/`)">
+                <img src="../assets/img/100za5.jpg" alt="" class="company-slider__img">
+              </div>
+
+              <div class="swiper-slide company-slider__item" @click="linker(`http://www.kings-speech.kz/`)">
+                <img src="../assets/img/king-speech.jpg" alt="" class="company-slider__img">
+              </div>
+
+              <div class="swiper-slide company-slider__item" @click="linker(`https://immuneplusworld.com/`)">
+                <img src="../assets/img/immune.png" alt="" class="company-slider__img">
               </div>
 
               <div class="swiper-slide company-slider__item">
-                <img src="../assets/img/company-2.png" alt="" class="company-slider__img">
+                <img src="../assets/img/unie.png" alt="" class="company-slider__img">
               </div>
-
-              <div class="swiper-slide company-slider__item">
-                <img src="../assets/img/company-3.png" alt="" class="company-slider__img">
-              </div>
-
-              <div class="swiper-slide company-slider__item">
-                <img src="../assets/img/company-4.png" alt="" class="company-slider__img">
-              </div>
-
-              <div class="swiper-slide company-slider__item">
-                <img src="../assets/img/company-5.png" alt="" class="company-slider__img">
-              </div>
-
-              <div class="swiper-slide company-slider__item">
-                <img src="../assets/img/company-1.png" alt="" class="company-slider__img">
-              </div>
-
-              <div class="swiper-slide company-slider__item">
-                <img src="../assets/img/company-2.png" alt="" class="company-slider__img">
-              </div>
-
             </div>
 
           </div>
@@ -304,8 +299,8 @@
             Быстро, просто, эффективно
           </h2>
 
-          <button class="bitrix-section__btn button">
-            Перейти на Битрикс
+          <button class="bitrix-section__btn button" @click="linker(`https://www.bitrix24.kz/create.php?p=13670906`)">
+            Перейти в Битрикс
           </button>
         </div>
 
@@ -433,15 +428,15 @@
                     placeholder="Напишите свое сообщение сюда..."
                     v-model="message"
                     :class="{'input--error' : messageStatus}"></textarea>
-
+          <!--
           <label class="contact-section__policy-box">
             <input type="checkbox" class="contact-section__checkbox" v-model="policy">
             <span class="contact-section__checkmark"></span>
 
             <span class="contact-section__policy-text">
                 Я согласен(а) с <a href="#">политика конфиденциальности</a>
-              </span>
-          </label>
+            </span>
+          </label> -->
 
           <div class="contact-section__error">
             {{ errorMessage }}
@@ -517,6 +512,10 @@ export default {
     },
     prevSlideCompany() {
       this.companySwiper.slidePrev()
+    },
+    linker(link) {
+      window.open(link, '_blank')
+      //window.location = "https://www.bitrix24.kz/create.php?p=13670906"
     },
     preText(text) {
       this.message = `Добрый день! Хотели бы поподробнее узнать о тарифе "` +  text + `", не могли бы нас проконсультировать.`
