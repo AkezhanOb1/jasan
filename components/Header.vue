@@ -1,6 +1,5 @@
 <template>
   <header class="header">
-
     <div class="header__top">
 
       <div class="header__container header__container--top">

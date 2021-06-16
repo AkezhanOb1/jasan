@@ -1,6 +1,5 @@
 <template>
   <main class="main">
-
     <section class="main__section welcome-section" :style="{ 'background-image': randomBg}" id="welcome">
       <div class="welcome-section__container">
         <h1 class="welcome-section__heading">
@@ -83,15 +82,9 @@
           </div>
 
           <div class="about-section__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae lectus sit cras libero. Sit nunc potenti id
-            iaculis. Mi odio sit integer sit vel porttitor vestibulum sit donec. Congue pharetra, etiam ipsum
-            vestibulum, lectus est. Facilisi arcu, donec dictumst justo, libero ligula accumsan.
+            Компания "Jasan" специализируется на комплексной автоматизации бизнеса. Рады предложить вам различные форматы решений вашего запроса для совместного достижения желаемых результатов.
             <br><br>
-            Nisi orci proin maecenas ridiculus integer. Viverra aliquam laoreet at duis. Viverra volutpat, in at
-            elementum elementum eleifend eu eget ullamcorper. Molestie nisl sit at bibendum id at iaculis diam arcu.
-            Vulputate placerat urna neque commodo iaculis bibendum ullamcorper. Egestas donec mauris tincidunt aliquet
-            et eu. Non magna enim ut turpis. Tristique a, phasellus morbi enim. Tristique fames ipsum nunc, adipiscing
-            lectus diam.
+            Наша миссия — помогать бизнесу работать эффективнее. Для этого мы внедряем современное ПО и модернизируем ИТ-сервисы. Сотрудничаем с клиентами по принципу «одного окна»: оказываем максимальный спектр услуг внедрения, эксплуатации и поддержки ИТ для бизнеса.
           </div>
         </div>
 
@@ -152,8 +145,7 @@
         <div class="tariff-section__title title-small">Наши пакеты</div>
         <div class="tariff-section__heading heading-medium">С нами все проще</div>
         <div class="tariff-section__subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae lectus sit cras libero. Sit nunc potenti id
-          iaculis. Mi odio sit integer sit vel porttitor vestibulum sit donec.
+          Приобретите Битрикс24 у нас и получите бесплатные часы внедрения, неограниченную поддержку. Уже более 1000 компаний работают эффективнее с Битрикс24 благодаря нам.
         </div>
 
         <div class="tariff-section__list">
@@ -312,9 +304,7 @@
             </div>
 
             <div class="bitrix-section__text">
-              Помогает продавать больше:• берет под контроль все каналы коммуникаций с клиентами;• подсказывает
-              менеджеру, что делать;• автоматизирует продажи;• создаёт рассылки под разные сегменты;• сообщает
-              руководителю о проблеме;• устанавливает взаимодействие с 1С.
+              Бесплатный онлайн-офис позволяет организовать работу всех отделов компании, координировать и отслеживать эффективность каждого сотрудника. Подключение IP-телефонии, почты и всех мессенджеров в контакт-центр позволяет обрабатывать все поступающие обращения в рамках одного интерфейса
             </div>
           </div>
 
@@ -324,9 +314,7 @@
             </div>
 
             <div class="bitrix-section__text">
-              Помогают работать вместе и успевать вовремя.Если задача поставлена в Битрикс24, она будет выполнена:• все
-              причастные наблюдают за её выполнением и вносят свои корректировки своевременно;• о задачах напоминают
-              счётчики;• она будет выведена вверх списка согласно приоритетам и срочности;
+              Система автоматически продвигает клиента по этапам сделки в воронке и регистрирует данные в CRM-карточку. Встроенное защищенное хранилище предполагает удобную работу со всеми документами компании с возможностью настройки прав на доступ.
             </div>
           </div>
 
@@ -336,9 +324,7 @@
             </div>
 
             <div class="bitrix-section__text">
-              Помогает работать вместе:• открытые и закрытые чаты;• общий диск;• календарь для встреч с учётом планов
-              участников;• создание групп по направлениям;• отчеты руководителю в определённое время;• бизнес-процессы и
-              другие инструменты для совместной работы
+              Система автоматически фиксирует все поступающие задачи и напоминает сотрудникам о сроках и выполнения. Встроенный конструктор позволяет быстро подключить Яндекс.Метрику и Google.Analytics, и создать магазин с прямой интеграцией в CRM.
             </div>
           </div>
 
@@ -365,16 +351,14 @@
 
         <div class="steps-section__list">
 
-          <div class="steps-section__step" v-for="i in 6">
+          <div class="steps-section__step" v-for="i in this.arraySteps">
 
             <div class="steps-section__info">
               <div class="steps-section__name">
-                Шаг {{ i }}. Название шага
+                Шаг {{ i.id }}. {{i.name}}
               </div>
-
               <div class="steps-section__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh eu facilisis dolor ipsum, nullam ornare.
-                Sed sit mi sed id at placerat lectus quis. Luctus diam ut non facilisi tellus a interdum.
+                 {{i.desc}}
               </div>
             </div>
 
@@ -485,6 +469,16 @@ Swiper.use([Pagination, Autoplay, Navigation]);
 export default {
   data() {
     return {
+      arraySteps: [
+        {id: 1, name: "Предпроектный анализ", desc: "Предпроектный анализ"},
+        {id: 2, name: "Регистрация облачного портала", desc: "Регистрация облачного портала"},
+        {id: 3, name: "Настройка поддомена", desc: "Настройка поддомена"},
+        {id: 4, name: "Базовые настройки системы", desc: "Базовые настройки системы"},
+        {id: 5, name: "Создание структуры компании в Битрикс24", desc: "Создание структуры компании в Битрикс24"},
+        {id: 6, name: "Добавление пользователей на портал", desc: "Добавление пользователей на портал"},
+        {id: 7, name: "Распределение пользователей по структуре", desc: "Распределение пользователей по структуре"},
+
+        ],
       allBackgroundImages,
       companySwiper: null,
       name: '',
