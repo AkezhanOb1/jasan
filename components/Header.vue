@@ -30,8 +30,8 @@
         </div>
 
         <div class="header__call-box">
-          <a href="tel: +7 (777) 205 93 39" class="header__phone-text">
-            +7 (777) 2059339
+          <a href="tel: +7 (747) 095 11 80" class="header__phone-text">
+            +7 (747) 095 11 80
           </a>
           <a class="header__call-order" v-scroll-to="{el: '#contact', duration: 700, offset: -160}">
             Заказать обратный звонок
@@ -107,8 +107,8 @@
       </div>
 
       <div class="sidebar__call-box">
-        <a href="tel: +7 (777) 205 93 39" class="sidebar__phone-text">
-          +7 (777) 2059339
+        <a href="tel: +7 (747) 095 11 80" class="sidebar__phone-text">
+          +7 (747) 0951180
         </a>
         <a href="" class="sidebar__call-order"
            v-scroll-to="{el: '#contact', duration: 700, offset: -100}"

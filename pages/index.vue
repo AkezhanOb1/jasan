@@ -4,12 +4,12 @@
       <div class="welcome-section__container">
         <h1 class="welcome-section__heading">
           <span>Автоматизируй</span> <br>
-          свой бизнес
+          свой бизнес 
         </h1>
 
         <p class="welcome-section__subtitle">
-          Проследи путь, который совершает клиент с момента, <br>
-          когда он только узнал о товаре и до покупки.
+          сократи издержки, увеличь доходность, <br/>
+          упрости работу с клиентской базой  <br/> и отслеживай продажи в настоящем времени.
         </p>
 
         <button class="welcome-section__btn button" v-scroll-to="{el: '#services', duration: 700, offset: -160}">
@@ -21,11 +21,11 @@
     <section class="main__section company-slider">
       <div class="company-slider__container">
         <div class="company-slider__title title-small">
-          Наши партнеры
+          Наши клиенты
         </div>
 
         <div class="company-slider__heading heading-medium">
-          Встречайте наших партнеров
+          Компании, которые доверились нам
         </div>
 
         <div class="company-slider__wrapper">
@@ -96,11 +96,11 @@
             </svg>
 
             <div class="about-section__item-title">
-              250+
+              20+
             </div>
 
             <div class="about-section__item-subtitle">
-              Счастливые клиенты
+              Счастливых клиентов
             </div>
           </div>
 
@@ -114,7 +114,7 @@
             </div>
 
             <div class="about-section__item-subtitle">
-              Лет опыт работы
+              Бизнес партнеров
             </div>
           </div>
 
@@ -124,11 +124,11 @@
             </svg>
 
             <div class="about-section__item-title">
-              300+
+              30+
             </div>
 
             <div class="about-section__item-subtitle">
-              Успешный проекты
+              Успешных проектов
             </div>
           </div>
 
@@ -145,7 +145,7 @@
         <div class="tariff-section__title title-small">Наши пакеты</div>
         <div class="tariff-section__heading heading-medium">С нами все проще</div>
         <div class="tariff-section__subtitle">
-          Приобретите Битрикс24 у нас и получите бесплатные часы внедрения, неограниченную поддержку. Уже более 1000 компаний работают эффективнее с Битрикс24 благодаря нам.
+          Гибкие тарифные планы помогут вам подобрать правильный пакет под нужды вашего бизнеса. <br/>Не нашли подходящий пакет? Свяжитесь с нами и мы предложим вам индивидуальные условия.
         </div>
 
         <div class="tariff-section__list">
@@ -161,10 +161,11 @@
               </div>
 
               <ul class="tariff-card__list">
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="tariff-card__item">Создание портала</li>
+                <li class="tariff-card__item">Приглашение сотрудников</li>
+                <li class="tariff-card__item">Заполнение организационной структуры</li>
+                <li class="tariff-card__item">Установка базовых настроек меню</li>
+                <li class="tariff-card__item">Настройка карточки клиента</li>
               </ul>
             </div>
 
@@ -191,11 +192,14 @@
               </div>
 
               <ul class="tariff-card__list">
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="tariff-card__item">Тариф начальный +</li>
+                <li class="tariff-card__item">Приглашение сотрудников</li>
+                <li class="tariff-card__item">Заполнение организационной структуры</li>
+                <li class="tariff-card__item">Установка базовых настроек меню</li>
+                <li class="tariff-card__item">Настройка карточки клиента</li>
+                <li class="tariff-card__item">Настройка карточки клиента</li>
+                <li class="tariff-card__item">Настройка карточки клиента</li>
+
               </ul>
             </div>
 
@@ -259,6 +263,9 @@
                 <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>      
               </ul>
             </div>
 
@@ -304,7 +311,7 @@
             </div>
 
             <div class="bitrix-section__text">
-              Бесплатный онлайн-офис позволяет организовать работу всех отделов компании, координировать и отслеживать эффективность каждого сотрудника. Подключение IP-телефонии, почты и всех мессенджеров в контакт-центр позволяет обрабатывать все поступающие обращения в рамках одного интерфейса
+              Система автоматически продвигает клиента по этапам сделки в воронке и регистрирует данные в CRM-карточку. Встроенное защищенное хранилище предполагает удобную работу со всеми документами компании с возможностью настройки прав на доступ.
             </div>
           </div>
 
@@ -314,7 +321,7 @@
             </div>
 
             <div class="bitrix-section__text">
-              Система автоматически продвигает клиента по этапам сделки в воронке и регистрирует данные в CRM-карточку. Встроенное защищенное хранилище предполагает удобную работу со всеми документами компании с возможностью настройки прав на доступ.
+              Система автоматически фиксирует все поступающие задачи и напоминает сотрудникам о сроках и выполнения. Встроенный конструктор позволяет быстро подключить Яндекс.Метрику и Google.Analytics, и создать магазин с прямой интеграцией в CRM.
             </div>
           </div>
 
@@ -324,7 +331,7 @@
             </div>
 
             <div class="bitrix-section__text">
-              Система автоматически фиксирует все поступающие задачи и напоминает сотрудникам о сроках и выполнения. Встроенный конструктор позволяет быстро подключить Яндекс.Метрику и Google.Analytics, и создать магазин с прямой интеграцией в CRM.
+              Бесплатный онлайн-офис позволяет организовать работу всех отделов компании, координировать и отслеживать эффективность каждого сотрудника. Подключение IP-телефонии, почты и всех мессенджеров в контакт-центр позволяет обрабатывать все поступающие обращения в рамках одного интерфейса
             </div>
           </div>
 
@@ -345,8 +352,7 @@
         </h2>
 
         <div class="steps-section__subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae lectus sit cras libero. Sit nunc potenti id
-          iaculis. Mi odio sit integer sit vel porttitor vestibulum sit donec.
+            Мы относимся к своей работе c максимальной ответственностью и хотим, чтобы весь процесс был прозрачным для вас.
         </div>
 
         <div class="steps-section__list">
@@ -470,14 +476,12 @@ export default {
   data() {
     return {
       arraySteps: [
-        {id: 1, name: "Предпроектный анализ", desc: "Предпроектный анализ"},
-        {id: 2, name: "Регистрация облачного портала", desc: "Регистрация облачного портала"},
-        {id: 3, name: "Настройка поддомена", desc: "Настройка поддомена"},
-        {id: 4, name: "Базовые настройки системы", desc: "Базовые настройки системы"},
-        {id: 5, name: "Создание структуры компании в Битрикс24", desc: "Создание структуры компании в Битрикс24"},
-        {id: 6, name: "Добавление пользователей на портал", desc: "Добавление пользователей на портал"},
-        {id: 7, name: "Распределение пользователей по структуре", desc: "Распределение пользователей по структуре"},
-
+        {id: 1, name: "Анализ-сбор информации", desc: "Аудит внутренних бизнес процессов компании, анализ используемых методов работы, выявление существующих потребностей при помощи наводящих вопросов (бриф)."},
+        {id: 2, name: "Техническое задание", desc: "Формирование задания/макета на основании первого этапа, предложение оптимального решения."},
+        {id: 3, name: "Внедрение/разработка", desc: "После утверждения технического задания, создается портал (аккаунт компании) и дальнейшая настройка портала по т.з."},
+        {id: 4, name: "Тестирование системы", desc: "По окончанию работ по внедрению и настройке портала, мы вместе с вами тщательно тестируем систему на возможные ошибки. Внесение корректив в рамках т.з."},
+        {id: 5, name: "Обучение", desc: "После успешного тестирования мы проводим обучение для вас и для ваших сотрудников в онлайн/офлайн форматах. Длительность и количество обучающих сессии зависит от выбранного вами пакета."},
+        {id: 6, name: "Сопровождение", desc: "Во время периода сопровождения мы помогаем решать проблемы выявленные во время эксплуатации. Длительность сопровождения зависит от выбранного вами пакета. *Отличается от Технической поддержки." },
         ],
       allBackgroundImages,
       companySwiper: null,
