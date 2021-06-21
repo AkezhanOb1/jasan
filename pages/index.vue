@@ -96,7 +96,7 @@
             </svg>
 
             <div class="about-section__item-title">
-              20+
+              24+
             </div>
 
             <div class="about-section__item-subtitle">
@@ -110,7 +110,7 @@
             </svg>
 
             <div class="about-section__item-title">
-              10+
+              11+
             </div>
 
             <div class="about-section__item-subtitle">
@@ -124,7 +124,7 @@
             </svg>
 
             <div class="about-section__item-title">
-              30+
+              32+
             </div>
 
             <div class="about-section__item-subtitle">
