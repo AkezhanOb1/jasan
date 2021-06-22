@@ -161,11 +161,13 @@
               </div>
 
               <ul class="tariff-card__list">
-                <li class="tariff-card__item">Создание портала</li>
-                <li class="tariff-card__item">Приглашение сотрудников</li>
-                <li class="tariff-card__item">Заполнение организационной структуры</li>
-                <li class="tariff-card__item">Установка базовых настроек меню</li>
-                <li class="tariff-card__item">Настройка карточки клиента</li>
+                <li class="tariff-card__item">Создание портала, приглашение сотрудников и заполнение организационной структуры</li>
+                <li class="tariff-card__item">Базовые настройки: меню, карточки клиента и полей в лидах (до 10), сделках, контактах и компаниях</li>
+                <li class="tariff-card__item">Настройка прав доступа</li>
+                <li class="tariff-card__item">Настройка воронки продаж в CRM (этапы, стадии и статусы)</li>
+                <li class="tariff-card__item">Обучение (1 час онлайн в Zoom с записью обучения)</li>
+                <li class="tariff-card__item">Сопровождение (1 неделя)</li>
+
               </ul>
             </div>
 
@@ -192,13 +194,13 @@
               </div>
 
               <ul class="tariff-card__list">
-                <li class="tariff-card__item">Тариф начальный +</li>
-                <li class="tariff-card__item">Приглашение сотрудников</li>
-                <li class="tariff-card__item">Заполнение организационной структуры</li>
-                <li class="tariff-card__item">Установка базовых настроек меню</li>
-                <li class="tariff-card__item">Настройка карточки клиента</li>
-                <li class="tariff-card__item">Настройка карточки клиента</li>
-                <li class="tariff-card__item">Настройка карточки клиента</li>
+                <li class="tariff-card__item">Функционал пакета <span class="tariff-card__package">Начальный</span></li>
+                <li class="tariff-card__item">Подключение почты</li>
+                <li class="tariff-card__item">Интеграция с сайтом на Tilda, Satu.</li>
+                <li class="tariff-card__item">Подключение соц.сетей (Whatsapp, Instagram. Facebook, Telegram)</li>
+                <li class="tariff-card__item">Настройка воронок продаж (до 3-х воронок) и типовых фильтров в CRM</li>
+                <li class="tariff-card__item">Обучение офлайн/онлайн в Zoom с записью (2 часа)</li>
+                <li class="tariff-card__item">Сопровождение (2 недели)</li>
 
               </ul>
             </div>
@@ -225,18 +227,20 @@
               </div>
 
               <ul class="tariff-card__list">
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="tariff-card__item">Функционал пакета <span class="tariff-card__package">Стандартный</span></li>
+                <li class="tariff-card__item">Настройка карточки клиента и полей в лидах (до 30), сделках, контактах и компаниях</li>
+                <li class="tariff-card__item">Настройка инструмента CRM-маркетинг: email-рассылки, SMS рассылки и тд. и сквозной аналитики</li>
+                <li class="tariff-card__item">Настройка персональных отчетов в CRM и в инструменте «Задачи и проекты» (до 10)</li>
+                <li class="tariff-card__item">Настройка воронок продаж (до 10) и автоматическое формирование документов в CRM</li>
+                <li class="tariff-card__item">Автоматизация CRM воронки(-ок): роботы и триггеры (автоматические действия)</li>
+                <li class="tariff-card__item">Обучение офлайн/онлайн в Zoom с записью (5 часов)</li>
+                <li class="tariff-card__item">Сопровождение (1 месяц)</li>
               </ul>
             </div>
 
             <div class="tariff-card__bottom">
               <div class="tariff-card__price">
-                от <span>120 000 тг.</span>
+                от <span>180 000 тг.</span>
               </div>
 
               <button class="tariff-card__btn button button--outline" v-scroll-to="{el: '#contact', duration: 700, offset: -160}" @click="preText(`Улучшенный`)">
@@ -256,22 +260,19 @@
               </div>
 
               <ul class="tariff-card__list">
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="tariff-card__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>      
+                <li class="tariff-card__item">Функционал пакета <span class="tariff-card__package">Улучшенный</span></li>
+                <li class="tariff-card__item">Интеграция с сайтами разной сложности</li>
+                <li class="tariff-card__item">Интеграция с 1с</li>
+                <li class="tariff-card__item">Разработка интеграций с различными сервисами и системами</li>
+                <li class="tariff-card__item">Полная автоматизация систем в связке с сторонними сервисами(интеграции)</li>
+                <li class="tariff-card__item">Обучение офлайн/онлайн в Zoom с записью (10 часов)</li>
+                <li class="tariff-card__item">Сопровождение (3 месяца)</li>  
               </ul>
             </div>
 
             <div class="tariff-card__bottom">
               <div class="tariff-card__price">
-                от <span>160 000 тг.</span>
+                от <span>270 000 тг.</span>
               </div>
 
               <button class="tariff-card__btn button button--outline" v-scroll-to="{el: '#contact', duration: 700, offset: -160}" @click="preText(`Продвинутый`)">

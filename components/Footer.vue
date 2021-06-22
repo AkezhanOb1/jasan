@@ -48,12 +48,8 @@
           </svg>
 
           <div class="footer__phone-group">
-            <a href="tel: +7 (777) 205 93 39" class="footer__contact-text footer__contact-text--mb10">
-              +7 (777) 2059339
-            </a>
-
-            <a href="tel: +7 (777) 205 93 39" class="footer__contact-text">
-              +7 (777) 2059339
+            <a href="tel: +7 (747) 095 11 80" class="footer__contact-text footer__contact-text--mb10">
+              +7 (747) 095 11 80
             </a>
           </div>
 
@@ -92,10 +88,10 @@
           </a>
         </div>
 
-        <div class="footer__privacy-text">
+        <!--<div class="footer__privacy-text">
           © Jasan. LTD, 2021. <br>
           Все права зашищены
-        </div>
+        </div>-->
       </div>
     </div>
   </footer>
