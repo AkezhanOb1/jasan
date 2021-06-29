@@ -560,9 +560,8 @@ export default {
         }
       }
 
-      if (this.policy && this.name !== '' && this.email !== '' && this.phoneNumber !== '' && this.message !== '') {
+      if (this.name !== '' && this.email !== '' && this.phoneNumber !== '' && this.message !== '') {
         this.errorMessage = ''
-
         this.$axios.post(process.env.API_URL + 'email', params, config)
           .then(response => {
             console.log(response)
