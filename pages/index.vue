@@ -33,20 +33,20 @@
           <div class="swiper-container company-slider__swiper-container">
 
             <div class="swiper-wrapper company-slider__inner-wrapper">
-              <div class="swiper-slide company-slider__item" @click="linker(`https://www.bloomzed.kz`)" >
-                <img src="../assets/img/bloomzed.png" alt="" class="company-slider__img">
+              <div class="swiper-slide company-slider__item" @click="linker(`https://www.instagram.com/inmode.almaty/`)" >
+                <img src="../assets/img/inmode.png" alt="" class="company-slider__img">
               </div>
 
-              <div class="swiper-slide company-slider__item" @click="linker(`https://100potolkov.kz/`)">
-                <img src="../assets/img/100-potolkov.png" alt="" class="company-slider__img">
-              </div>
-
-              <div class="swiper-slide company-slider__item" @click="linker(`https://100za5.kz/`)">
-                <img src="../assets/img/100za5.jpg" alt="" class="company-slider__img">
+              <div class="swiper-slide company-slider__item" @click="linker(`https://aps-investment.kz`)">
+                <img src="../assets/img/aps.png" alt="" class="company-slider__img">
               </div>
 
               <div class="swiper-slide company-slider__item" @click="linker(`http://www.kings-speech.kz/`)">
                 <img src="../assets/img/king-speech.jpg" alt="" class="company-slider__img">
+              </div>
+
+              <div class="swiper-slide company-slider__item" @click="linker(`https://100potolkov.kz/`)">
+                <img src="../assets/img/100-potolkov.png" alt="" class="company-slider__img">
               </div>
 
               <div class="swiper-slide company-slider__item" @click="linker(`https://immuneplusworld.com/`)">
@@ -441,7 +441,7 @@
 
       </div>
 
-      <img src="../assets/img/contact-img.png" alt="" class="contact-section__img">
+      <img src="../assets/img/telephon.svg" alt="" class="contact-section__img">
     </section>
 
     <div class="modal" v-if="modalStatus">
@@ -520,10 +520,6 @@ export default {
       this.message = `Добрый день! Хотели бы поподробнее узнать о тарифе "` +  text + `", не могли бы нас проконсультировать.`
     },
     sendForm() {
-      if (this.policy === false) {
-        this.errorMessage = 'Пожалуйста, ознакомьтесь с политикой конфиденциальности'
-      }
-
       if (this.name === '') {
         this.errorMessage = 'Пожалуйста, заполните все поля'
         this.nameStatus = true
