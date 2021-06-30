@@ -50,7 +50,7 @@
               </div>
 
               <div class="swiper-slide company-slider__item" @click="linker(`https://immuneplusworld.com/`)">
-                <img src="../assets/img/immune.png" alt="" class="company-slider__img">
+                <img src="../assets/img/msa-logo.png" alt="" class="company-slider__img">
               </div>
 
               <div class="swiper-slide company-slider__item">
@@ -272,7 +272,7 @@
 
             <div class="tariff-card__bottom">
               <div class="tariff-card__price">
-                от <span>270 000 тг.</span>
+                от <span>310 000 тг.</span>
               </div>
 
               <button class="tariff-card__btn button button--outline" v-scroll-to="{el: '#contact', duration: 700, offset: -160}" @click="preText(`Продвинутый`)">
