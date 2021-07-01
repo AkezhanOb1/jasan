@@ -33,16 +33,25 @@
           <div class="swiper-container company-slider__swiper-container">
 
             <div class="swiper-wrapper company-slider__inner-wrapper">
-              <div class="swiper-slide company-slider__item" @click="linker(`https://www.instagram.com/inmode.almaty/`)" >
-                <img src="../assets/img/inmode.png" alt="" class="company-slider__img">
+
+              <div class="swiper-slide company-slider__item" @click="linker(`http://www.kings-speech.kz/`)">
+                <img src="../assets/img/king-speech.jpg" alt="" class="company-slider__img">
               </div>
 
               <div class="swiper-slide company-slider__item" @click="linker(`https://aps-investment.kz`)">
                 <img src="../assets/img/aps.png" alt="" class="company-slider__img">
               </div>
 
-              <div class="swiper-slide company-slider__item" @click="linker(`http://www.kings-speech.kz/`)">
-                <img src="../assets/img/king-speech.jpg" alt="" class="company-slider__img">
+              <div class="swiper-slide company-slider__item" @click="linker(`https://www.instagram.com/inmode.almaty/`)" >
+                <img src="../assets/img/inmode.png" alt="" class="company-slider__img">
+              </div>
+
+              <div class="swiper-slide company-slider__item" @click="linker(`https://rai-company.kz/`)">
+                <img src="../assets/img/rai-logo.png" alt="" class="company-slider__img">
+              </div>
+
+              <div class="swiper-slide company-slider__item" @click="linker(`https://myspeaking.finistcom.kz/`)">
+                <img src="../assets/img/msa-logo.png" alt="" class="company-slider__img">
               </div>
 
               <div class="swiper-slide company-slider__item" @click="linker(`https://100potolkov.kz/`)">
@@ -50,8 +59,13 @@
               </div>
 
               <div class="swiper-slide company-slider__item" @click="linker(`https://immuneplusworld.com/`)">
-                <img src="../assets/img/msa-logo.png" alt="" class="company-slider__img">
+                <img src="../assets/img/immune.png" alt="" class="company-slider__img">
               </div>
+
+              <div class="swiper-slide company-slider__item" @click="linker(`https://100za5.kz/`)">
+                <img src="../assets/img/100za5.jpg" alt="" class="company-slider__img">
+              </div>
+
 
               <div class="swiper-slide company-slider__item">
                 <img src="../assets/img/unie.png" alt="" class="company-slider__img">
@@ -392,7 +406,7 @@
         </div>
 
         <div class="contact-section__heading heading-medium">
-          Свзязаться с нами
+          Связаться с нами
         </div>
 
         <form class="contact-section__form">
