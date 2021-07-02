@@ -54,6 +54,10 @@
                 <img src="../assets/img/msa-logo.png" alt="" class="company-slider__img">
               </div>
 
+              <div class="swiper-slide company-slider__item" @click="linker(`https://vector24.kz/`)">
+                <img src="../assets/img/vector.png" alt="" class="company-slider__img">
+              </div>
+
               <div class="swiper-slide company-slider__item" @click="linker(`https://100potolkov.kz/`)">
                 <img src="../assets/img/100-potolkov.png" alt="" class="company-slider__img">
               </div>
@@ -176,7 +180,7 @@
 
               <ul class="tariff-card__list">
                 <li class="tariff-card__item">Создание портала, приглашение сотрудников и заполнение организационной структуры</li>
-                <li class="tariff-card__item">Базовые настройки: меню, карточки клиента и полей в лидах (до 10), сделках, контактах и компаниях</li>
+                <li class="tariff-card__item">Базовые настройки: меню, карточки клиента и полей в лидах, сделках, контактах и компаниях (до 10)</li>
                 <li class="tariff-card__item">Настройка прав доступа</li>
                 <li class="tariff-card__item">Настройка воронки продаж в CRM (этапы, стадии и статусы)</li>
                 <li class="tariff-card__item">Обучение (1 час онлайн в Zoom с записью обучения)</li>
@@ -275,10 +279,11 @@
 
               <ul class="tariff-card__list">
                 <li class="tariff-card__item">Функционал пакета <span class="tariff-card__package">Улучшенный</span></li>
-                <li class="tariff-card__item">Интеграция с сайтами разной сложности</li>
-                <li class="tariff-card__item">Интеграция с 1с</li>
+                <li class="tariff-card__item">Интеграция с 1с и с сайтами разной сложности</li>
                 <li class="tariff-card__item">Разработка интеграций с различными сервисами и системами</li>
-                <li class="tariff-card__item">Полная автоматизация систем в связке с сторонними сервисами(интеграции)</li>
+                <li class="tariff-card__item">Полная автоматизация систем в связке со сторонними сервисами(интеграции)</li>
+                <li class="tariff-card__item">База знаний, написание регламентов, check-листов</li>
+                <li class="tariff-card__item">Электронный документооборот</li>
                 <li class="tariff-card__item">Обучение офлайн/онлайн в Zoom с записью (10 часов)</li>
                 <li class="tariff-card__item">Сопровождение (3 месяца)</li>  
               </ul>
