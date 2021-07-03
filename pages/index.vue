@@ -58,7 +58,7 @@
                 <img src="../assets/img/vector.png" alt="" class="company-slider__img">
               </div>
 
-              <div class="swiper-slide company-slider__item" @click="linker(`https://www.instagram.com/mustafa.buruko/?hl=en/`)">
+              <div class="swiper-slide company-slider__item" @click="linker(`https://www.instagram.com/muslim_buruko/?hl=en/`)">
                 <img src="../assets/img/buruko.png" alt="" class="company-slider__img">
               </div>
 
