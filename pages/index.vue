@@ -51,7 +51,7 @@
                 <img src="../assets/img/aps.png" alt="" class="company-slider__img">
               </div>
 
-              <div class="swiper-slide company-slider__item" @click="linker(`http://aigpartners.kz/`)">
+              <div class="swiper-slide company-slider__item" @click="linker(`http://www.aigc.kz/`)">
                 <img src="../assets/img/aig.png" alt="" class="company-slider__img">
              </div>
 
