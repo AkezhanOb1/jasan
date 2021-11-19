@@ -33,6 +33,10 @@
           <a href="tel: +7 (747) 095 11 80" class="header__phone-text">
             +7 (747) 095 11 80
           </a>
+          <a href="tel: +7 (777) 205 93 39" class="header__phone-text">
+            +7 (777) 205 93 39
+          </a>
+  
           <a class="header__call-order" v-scroll-to="{el: '#contact', duration: 700, offset: -160}">
             Заказать обратный звонок
           </a>

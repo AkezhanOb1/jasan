@@ -96,8 +96,8 @@
   }
 
   &__phone-text {
-    @include text-style(2.4rem, 700, $text-color);
-    line-height: 29px;
+    @include text-style(2rem, 600, $text-color);
+    line-height: 25px;
     margin-bottom: 5px;
     display: block;
   }

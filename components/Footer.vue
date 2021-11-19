@@ -51,6 +51,9 @@
             <a href="tel: +7 (747) 095 11 80" class="footer__contact-text footer__contact-text--mb10">
               +7 (747) 095 11 80
             </a>
+            <a href="tel: +7 (777) 205 93 39" class="footer__contact-text footer__contact-text--mb10">
+              +7 (777) 205 93 39
+            </a>
           </div>
 
         </div>
