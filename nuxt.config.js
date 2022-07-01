@@ -5,7 +5,9 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Самые эффективные CRM услуги в Казахстане' },
+      {name: 'og:title', content: 'Jasan Group'},
+      {name: 'og:description', content: 'Самые эффективные CRM услуги в Казахстане'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
