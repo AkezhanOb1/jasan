@@ -404,6 +404,36 @@
       </div>
     </section>
 
+    <section class="main__section certificates-section" id="certificates">
+      <div class="certificates-section__container">
+
+        <div class="certificates-section__title title-small">
+          Наши компетенции
+        </div>
+
+        <h2 class="certificates-section__heading heading-medium">
+          Сертификаты
+        </h2>
+
+        <div class="certificates-section__card">
+          <a
+            class="certificates-section__preview"
+            href="/certificates/sipuni-partner-certificate.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Открыть сертификат партнера SipUni"
+          >
+            <img
+              class="certificates-section__image"
+              src="/certificates/sipuni-partner-certificate.png"
+              alt="Сертификат партнера SipUni для ТОО Jasan Group"
+            >
+          </a>
+        </div>
+
+      </div>
+    </section>
+
     <section class="main__section contact-section" id="contact">
 
       <div class="contact-section__container">

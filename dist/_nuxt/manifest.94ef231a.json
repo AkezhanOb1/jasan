@@ -1,7 +1,6 @@
 {
   "name": "name-of-project",
   "short_name": "name-of-project",
-  "description": "## Build Setup",
   "icons": [],
   "start_url": "/?standalone=true",
   "display": "standalone",
